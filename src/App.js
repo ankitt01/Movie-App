@@ -8,14 +8,16 @@ import Footer from "./components/Footer"
 
 function App() {
   return (
-    <div>
+    <div className="bg-primary-color">
       <Router>
         <Header />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/movie/:imdbID" component={MovieDetail} />
-          <Route component={PageNotFound} />
-        </Switch>
+        <div className='px-4'>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/movie/:imdbID" component={MovieDetail} />
+            <Route component={PageNotFound} />
+          </Switch>
+        </div>
         <Footer />
       </Router>
     </div>

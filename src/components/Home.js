@@ -1,8 +1,13 @@
-import React from 'react'
+import MovieListing from './MovieListing'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <div>
+        <img src="" alt="" />
+      </div>
+      <MovieListing />
+    </div>
   )
 }
 
